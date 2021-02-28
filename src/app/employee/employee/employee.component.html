@@ -1,11 +1,9 @@
-
+  <app-employee-filter (newItemEvent)="filterChange($event)"></app-employee-filter>
   <li>
 	<a routerLinkActive="active" routerLink="employee-add">Add Employee</a>		
   </li>
-  <div class="row" *ngFor="let employee of employeeList">
-    <div class="col-sm-2">{{employee.name}}</div>
-    <div class="col-sm-2">{{employee.gender}}</div>
-    <div class="col-sm-2" (click) = "editEmployee()" >Edit</div>
-    <div class="col-sm-2">Delete</div>
+ 
+  <div *ngFor="let employee of employeeList">
+    <app-employee-detail [employee]="employee" ></app-employee-detail>
   </div>
 

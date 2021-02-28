@@ -7,10 +7,14 @@ import { AppComponent } from './app.component';
 import { EmployeeModule } from './employee/employee.module';
 import { SettingModule } from './setting/setting.module';
 import { AppRoutingModule } from './/app-routing.module';
+//import { EmployeeDetailComponent } from './employee/employee/employee-detail.component';
+//import { EmployeeFilterComponent } from './employee/employee/employee-filter.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+  //  EmployeeDetailComponent,
+   // EmployeeFilterComponent
   ],
   imports: [
     BrowserModule,

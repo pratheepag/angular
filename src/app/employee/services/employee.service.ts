@@ -42,6 +42,9 @@ export class EmployeeService {
           })
       });
   }
+  deleteEmployee(id:number): Observable<void>{
+    return this.httpClient.delete<void>(`${this.baseurl}/${id}`);
+  }
   private handleError(errorResponse : HttpErrorResponse){
     
   }

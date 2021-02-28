@@ -6,11 +6,13 @@ import { SettingModule } from './setting/setting.module'; */
 import { SettingComponent } from './setting/setting/setting.component';
 import { EmployeeComponent } from './employee/employee/employee.component';
 import { EmployeeAddComponent } from './employee/employee-add/employee-add.component';
+import { EmployeeDeleteComponent } from './employee/employee-delete/employee-delete.component';
 
 const appRoutes: Routes = [
 	{ path:'employee', component: EmployeeComponent },
 	{ path:'setting', component: SettingComponent },
-  { path:'employee-add', component: EmployeeAddComponent }
+  { path:'edit/:id', component: EmployeeAddComponent },
+  { path:'delete/:id', component: EmployeeDeleteComponent }  
 ];
 
 @NgModule({

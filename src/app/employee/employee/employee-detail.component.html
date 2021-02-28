@@ -1,0 +1,6 @@
+<div class="row">
+  <div class="col-sm-2">{{employee.name}}</div>
+  <div class="col-sm-2">{{employee.gender}}</div>
+  <div class="col-sm-2" [routerLink]="[ '/edit',employee.id]" >Edit</div>
+  <div class="col-sm-2" (click)="deleteEmployee(employee.id)">Delete</div>
+</div>
